@@ -1,0 +1,9 @@
+// helper for quick fontsize mapping
+@function color($key) {
+    @if map-has-key($colors, $key) {
+      @return map-get($colors, $key);
+    } @else {
+      @return 0;
+    }
+  }
+  

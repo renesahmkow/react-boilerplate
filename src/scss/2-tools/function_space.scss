@@ -1,0 +1,10 @@
+$space: () !default;
+
+// helper for quick space mapping
+@function space($key) {
+  @if map-has-key($space, $key) {
+    @return map-get($space, $key);
+  } @else {
+    @return 0;
+  }
+}

@@ -1,0 +1,8 @@
+// helper for quick fontsize mapping
+@function fontsize($key) {
+  @if map-has-key($font-size, $key) {
+    @return map-get($font-size, $key);
+  } @else {
+    @return 0;
+  }
+}

@@ -1,11 +1,12 @@
 import React from 'react';
+import ContentRouter from './js/router';
 import 'App.scss';
 
 //Import Components
 
 const App = () => (
   <div>
-    <h1 className='headline'>Hello React Boilerplate!!</h1>
+    <ContentRouter></ContentRouter>
   </div>
 );
 
